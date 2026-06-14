@@ -3,7 +3,7 @@
 **Self-correcting Hierarchical Agentic RAG**
 
 > Independent research by Elia Ghazal · June 2026  
-> Paper: [github.com/eliaghazal/SHARP-RAG-Paper](https://github.com/eliaghazal/SHARP-RAG-Paper)
+> Paper: [Link to paper](https://zenodo.org/records/20690440)
 
 ---
 
