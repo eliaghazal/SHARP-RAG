@@ -1,0 +1,61 @@
+{
+  "sharp_rag_v2": {
+    "exact_match": 0.15,
+    "f1_score": 0.1578128934777134,
+    "avg_retry_count": 1.65,
+    "avg_latency_ms": 57184.353053569794,
+    "critique_distribution": {
+      "sufficient": 4,
+      "insufficient": 16,
+      "contradictory": 0
+    }
+  },
+  "planning_baseline": {
+    "exact_match": 0.25,
+    "f1_score": 0.281289782570611,
+    "avg_latency_ms": 24830.38934469223
+  },
+  "naive_rag": {
+    "exact_match": 0.25,
+    "f1_score": 0.29500000000000004,
+    "avg_latency_ms": 18031.53520822525
+  },
+  "n_evaluated": 20,
+  "sample_outputs": [
+    {
+      "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+      "ground_truth": "yes",
+      "sharp_rag_answer": "no",
+      "baseline_answer": "yes",
+      "retry_count": 2
+    },
+    {
+      "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+      "ground_truth": "Chief of Protocol",
+      "sharp_rag_answer": "To find the government position held by the woman who portrayed Corliss Archer in the film Kiss and Tell, we need to identify the actress who played Corliss Archer and then find her government position. From evidence [1], we know that Shirley Temple played Corliss Archer in the film Kiss and Tell. However, there is no information about her holding a government position. Instead, we look at evidence [4], which mentions Janet Waldo as the title character in \"Meet Corliss Archer\". However, it does not mention her holding a government position either. We then look at evidence [6], which mentions the radio program \"Meet Corliss Archer\" but does not mention a government position. However, it does not mention Janet Waldo either. We then look at evidence [4] again, which mentions Janet Waldo's profession as a radio and voice actress but does not mention a government position. However, it does mention that she is an American. We then look at evidence [6] again, which mentions the radio program \"Meet Corliss Archer\" but does not mention a government position. However, it does mention that the program was an adaptation of the radio series of the same name, which was based on a series of short stories by F. Hugh Herbert, and that it was broadcast by CBS, a government position is not mentioned. However, we look at evidence [6] again, which mentions that the program was broadcast by CBS, and then we look at evidence [3] which mentions that Meet Corliss Archer is an American television sitcom that aired on CBS. We then look at evidence [4] again, which mentions Janet Waldo's profession as a radio and voice actress, and then we look at evidence [6] again, which mentions the radio program \"Meet Corliss Archer\" and that it was broadcast by CBS, and then we look at evidence [3] which mentions that Meet Corliss Archer is an American television sitcom that aired on CBS, and then we look at evidence [4] again, which mentions Janet Waldo's profession as a radio and voice actress, and then we look at evidence [3] which mentions that Meet Corliss Archer is an American television sitcom that aired on CBS, and then we look at evidence [4] again, which mentions Janet Waldo's profession as a radio and voice actress, and then we look at evidence [3] which mentions that Meet Corliss Archer is an American television sitcom that aired on CBS, and then",
+      "baseline_answer": "Evidence [1] states that the 1945 film Kiss and Tell stars Shirley Temple as Corliss Archer, and evidence [3] mentions the TV series Meet Corl",
+      "retry_count": 2
+    },
+    {
+      "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+      "ground_truth": "Animorphs",
+      "sharp_rag_answer": "Animorphs",
+      "baseline_answer": "unknown",
+      "retry_count": 2
+    },
+    {
+      "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+      "ground_truth": "no",
+      "sharp_rag_answer": "no",
+      "baseline_answer": "no",
+      "retry_count": 2
+    },
+    {
+      "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+      "ground_truth": "Greenwich Village, New York City",
+      "sharp_rag_answer": "However, we can find a connection by looking at the evidence [1] which mentions Big Stone Gap, a 2014 American drama romantic comedy film written and directed by Adriana Trigiani. The film had its world premiere at the Virginia Film Festival on November 6, 2014. But this does not",
+      "baseline_answer": "unknown",
+      "retry_count": 2
+    }
+  ]
+}
